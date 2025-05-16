@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- fuentes -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <ul class="nav">
+
+            <li class="nombre">
+                <a id="nombre" href="#">CharlieMiguel CV</a>
+            </li>
+            <li>
+                <a class="underline-center" href="#home">Home</a>
+            </li>
+            <li>
+                <a class="underline-center" href="#about">About</a>
+            </li>
+            <li>
+                <a class="underline-center" href="#proyects">Proyects</a>
+            </li>
+            <li>
+                <a class="underline-center" href="#contac">Contac</a>
+            </li>
+             <li>
+                <a class="ico" target="_blank" href="https://github.com/CharlieMiguel/"><i class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+
+
+    </header>
+
+    <section id="home">
+
+        <div class="cn-hm">
+            
+        <div class="tx-hm scroll-item">
+            <p id="p">Hello World, Im</p>
+            <p id="p2">Jose Miguel</p>
+            <p id="p3"><span id="typed-name"></span></p>
+            <p id="p4">Welcome to My personal website.</p>
+        </div>
+
+        <div class="img-hm scroll-item">
+                <img class="foto" src="img/foto.webp" width="250px">
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="about">
+
+        <div class="ab-cn">
+
+        <div class="tx-ab">
+
+            <p>Hola, soy <span id="jose">Jose Miguel</span>, soy diseñador de paginas web <br>
+                <span id="jose">(Front-end)</span> vengo a ofrecerte mi servicio como desarrolador, enfocado <br>
+                en la experiencia del usuario a un muy buen precio.
+            </p>
+
+            <p>Diseñamos tu pagina web para negocio o emprendimiento, a tu gusto con <br>
+                las caracteristicas, diseño, colores, animaciones que desees ajustandonos <br>
+                a tu presupuesto.
+            </p>
+
+            <p>Paginas completamente funcionales para asegurar tu venta de <br>
+                productos o servicios y promover tu emprendimiento y trabajo.
+            </p>
+
+            <p>Trabajo de forma personalizada, entendiendo las necesidades de cada cliente <br> y
+                transformándolas <br> en soluciones visuales atractivas y efectivas. Me encargo de <br>
+                todo el proceso: desde el diseño visual hasta la implementación técnica, para <br>
+                que no tengas que preocuparte por nada. Además, ofrezco soporte y mantenimiento <br>
+                continuo para que tu sitio esté siempre actualizado.</p>
+
+            <p><span id="jose">Lenguajes Dominados :</span></p>
+            
+            <img class="html" src="img/html.webp" height="40px">
+            <img class="css" src="img/css.webp" height="40px">
+            <img class="js" src="img/js.webp" height="40px">
+            <p id="js">Java Script <br>(poca experiencia)</p>
+            <p id="css">Css</p>
+            <p id="html">Html</p>
+        </div>
+
+        <div class="abimg">
+            <img id="imgab" src="img/foto2.webp" width="290px">
+        </div>
+
+        </div>
+    </section>
+
+    <section id="proyects">
+
+        <div class="pcn">
+         
+            <div class="card">
+                <div class="fotoi">
+                    <img src="img/cryss.webp" class="ii" width="260px" height="150px" >
+                </div>
+                <p id="dc">Cryss Details</p>
+                <p id="dc1">Pagina de venta adaptada a varios dispositivos con colores
+                    suaves y llamativos con varias secciones cartas con transiciones
+                    y animaciones leves
+                </p>
+                <p id="dc2">(100% creada por nosotros desde 0)</p>
+                <button class="btn" onclick="cryss()">INSPECCIONAR</button>
+            </div>
+            <!-- fin -->
+                         <div class="card">
+                <div class="fotoi">
+                    <img src="img/pcpedia.webp" class="ii" width="260px" height="150px" >
+                </div>
+                <p id="dc4">Pc Pedia</p>
+                <p id="dc1">Pagina tipo wikipedia con animaciones y buenos tonos de colores
+                    ambientada en informacion relevante acerca de componentes de computadoras
+                </p>
+                <p id="dc2">(100% creada por nosotros desde 0)</p>
+                <button class="btn" onclick="pcpedia()">INSPECCIONAR</button>
+            </div>
+            <!-- fin -->
+                         <div class="card">
+                <div class="fotoi">
+                    <img src="img/botanica.webp" class="ii" width="260px" height="150px" >
+                </div>
+                <p id="dc5">La botanica</p>
+                <p id="dc1">Pagina acerca de informacion de flores bien detallada
+                    con animacion suaves gran variacion de flores con adaptacion a 
+                    diferentes dispositivos
+                </p>
+                <p id="dc2">(100% creada por nosotros desde 0)</p>
+                <button class="btn" onclick="botanica()">INSPECCIONAR</button>
+            </div>
+            <!-- fin -->
+
+        </div>
+
+    </section>
+
+    <section id="contac">
+
+        <div class="contenido">
+
+            <div class="texto">
+
+                <p><span>Whatssap:</span> <a href="" target="_blank" onclick="ws()">8299682961</a></p>
+                <p><span>Instagram:</span><a target="_blank" href="https://www.instagram.com/charliedev34/?next=%2F"> charliedev34</a></p>
+                <p><span>Email: </span><a href="" onclick="email()">charliewebs34@gmail.com</a></p>
+            </div>
+
+
+            <div class="form">
+                <form  action="https://formspree.io/f/xqaqwrvk" method="POST">
+                <label for="">Contactame</label>
+                <input type="email" name="email" required placeholder="Email"><br>
+                <input type="text" required placeholder="Asunto"><br>
+                <textarea required cols="58" rows="10" placeholder="Mensaje" name="mesaje" ></textarea>
+
+                <button class="boton" type="submit">enviar</button>
+                </form>
+            </div>  
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/wirite.js"></script>
+</body>
+</html>

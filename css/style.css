@@ -1,0 +1,609 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #090808;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    background-color: #090808;
+}
+
+.nav{
+    display: flex;
+    position: relative;
+    right: -250px;
+    top: -10px;
+    font-size: 17px;
+}
+.nav li {
+list-style: none;
+margin: 20px;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: "cal sans";
+}
+
+.ico{
+    position: absolute;
+    font-size: 30px;
+    top: 8px;
+    left: 980px;
+}
+
+.nombre{
+    position: relative;
+    right:280px;
+    font-family: "alata";
+    color: white;
+}
+
+.nav li a:hover{
+transition: all 0.40s ease;
+text-shadow: 0px 0px 25px #FFB347 ;
+
+}
+.nav #nombre,i:hover{
+    text-decoration: none;
+    text-shadow: none;
+}
+
+
+.tx-hm{
+    position: relative;
+    left: 400px;
+    top: 160px;
+    color: white;
+    width: 270px;
+    animation: scaleEffect 1.5s ease-out forwards;
+}
+
+
+
+#p{
+    font-family: "cal sans";
+    position: relative;
+    top:46px ;
+    left: 1px;
+    color:#FFB347;
+}
+
+#p2{
+    font-family: "cal sans";
+    font-size: 44px;
+}
+
+#p3{
+    font-family: "cal sans";
+    position: relative;
+    top: -44px;
+    font-size: 24px;
+    color: #ffb247e3;
+}
+
+#p4{
+    font-family: "cal sans";
+    position: relative;
+    font-size: 19x;
+    top: -62px;
+    left: 3px;
+}
+
+.img-hm{
+    background-color: transparent;
+    border-radius: 5000px;
+    width: 250px;
+    height:275px ;
+    position: relative;
+    left: 770px;
+    top: -130px;
+    animation: slideIn 1.5s ease-out forwards;
+}
+.foto{
+    border-radius: 5000px;
+    border: 4px solid #ffb753;
+    box-shadow: 0px 0px 15px #FFB347;   
+}
+
+#home{
+    height: 700px;
+}
+
+
+
+    @keyframes slideIn {
+        0% {
+            opacity: 0;                
+           transform: translateX(100vw); 
+        }
+        70% {
+            opacity: 1;                 
+            transform: translateX(-20px); 
+        }
+        100% {
+            opacity: 1;                
+            transform: translateX(0);   
+        }
+    }
+  
+
+    @keyframes scaleEffect {
+         0% {
+            opacity: 0;                  
+            transform: scale(0.5);       
+        }
+        70% {
+            opacity: 1;                 
+            transform: scale(1.05);      
+        }
+        100% {
+            opacity: 1;                  
+            transform: scale(1);    
+        }
+    }
+
+
+#typed-name::after{
+content: '|';
+animation: blink .7s step-end infinite;
+color: white;
+}
+
+@keyframes blink{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: o;
+    }
+}
+
+  .underline-center {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .underline-center::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #FFB347;
+    transition: width 0.3s ease, left 0.3s ease; 
+  }
+
+  .underline-center:hover::after {
+    width: 100%;
+    left: 0; 
+  }
+
+  #about{
+    overflow-x: hidden;
+  }
+
+  .ab-cn{
+    height: 700px;;
+  }
+
+  .tx-ab{
+    font-family: "cal sans";
+    font-size: 17px;
+    width: 600px;
+    color: #F5F5F5 ;
+    position: relative;
+    top: 100px;
+    left: 650px;
+
+    transform: scale(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-out;
+  }
+
+
+  #jose{
+    color: #FFB347;
+  }
+
+  #js{
+    font-size: 11px;
+    position: relative;
+    left: 88px;
+    top: -15px;
+  }
+  #css{
+    font-size: 11px;
+    position: relative;
+    top: -53px;
+    left: 53px;
+  }
+
+#html{
+    font-size: 11px;
+    position: relative;
+    top: -79px;
+    left: 8px;
+}
+
+.abimg{
+    position: absolute;
+    top: 913px;
+    left: 150px;
+    height: 435px;
+    border-radius: 20px;
+
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.4s ease-out;
+    will-change: transform, opacity;
+}
+
+.abimg.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#imgab{
+    border-radius: 20px;
+    border: 4px solid #ff9502;
+    box-shadow: 0px 0px 50px #e09326;
+}
+
+
+.pcn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+    background-color: #1A1A1A;
+    height: 435px;
+    width: 289px;
+    position: relative;
+    top: 150px;
+    margin: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     will-change: transform;
+    opacity: 0;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease-out;
+}
+
+.card.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.card:hover{
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 20px #ff9502;
+
+}
+
+
+.fotoi{
+    background-color: green;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    width: 260px;
+    margin: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#dc{
+    color: white;
+    font-family: "cal sans";
+    position: relative;
+    top: 10px;
+    left: 80px;
+    font-size: 20px;
+}
+
+#dc1{
+    color: white;
+    font-family: "cal sans";
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+    margin: 10px;
+}
+
+#dc2{
+    position: relative;
+    top: 17px;
+    margin: 10px;
+    font-family: "cal sans";
+    font-size: 13px;
+    color: white;
+}
+
+.btn{
+    position: relative;
+    top: 53px;
+    left: 20px;
+    height: 30px;
+    width: 250px;
+    border: 1px solid #ff9502;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-family: "noto sans";
+}
+
+.btn:hover{
+    background-color: #ff960293;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px #ff9502;
+}
+
+.ii{
+    position: relative;
+    border-radius: 10px;
+}
+
+#dc4{
+    color: white;
+    font-family: "cal sans";
+    font-size: 20px;
+    position: relative;
+    left: 99px;
+    top: 15px;
+}
+
+#dc5{
+    color: white;
+    font-family: "cal sans";
+    font-size: 20px;
+    position: relative;
+    left: 95px;
+    top: 15px;
+}
+
+.card.visible {
+    transform: scale(1);
+    opacity: 1;
+}
+ 
+/*nav animacion*/
+.nav li a.active {
+    text-shadow: 0px 0px 25px #FFB347;
+}
+
+.nav li a.active::after {
+    width: 100%;
+    left: 0;
+}
+/*fin*/
+
+#contac{
+    height: 700px;
+}
+
+.texto{
+    background-color: transparent;
+    position: relative;
+    height: 150px;
+    width: 300px;
+    left: 150px;
+    top: 250px;
+}
+
+.texto span{
+    color: #FFB347;
+    font-family: "cal sans";
+    margin-right: 6px;
+}
+
+.texto p{
+    font-size: 18px;
+}
+
+.texto a{
+    color: white;
+}
+
+.texto a:hover{
+    color: blue;
+    transition: all 0.3s ease;
+}
+
+.form{
+    background-color: #1A1A1A;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    left: 700px;
+    top: 50px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.form input{
+    border-radius: 5px;
+    margin: 10px;
+    height: 30px;
+    width: 420px;
+    border: 1px solid #ff9502;
+    background-color: transparent;
+    color: white;
+}
+
+.form textarea{
+    margin: 10px;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #ff9502;
+    color: white;
+    margin-top:0 ;
+}
+
+label{
+    color: white;
+    font-family: "cal sans";
+    margin: 10px;
+    position: relative;
+    font-size: 26px;
+    left: 150px;
+    top: 5px;
+}
+
+
+
+.boton{
+    border: none;
+    position: relative;
+    top: 30px;
+    left: 370px;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #ff9502;
+    background-color: transparent;
+    color: white;
+}
+
+
+.boton:hover{
+    background-color: #ff9602da;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .ico{
+        display: none;
+    }
+    .nombre{
+        display: none;
+    }
+    .nav{
+        left: -15px;
+    }
+
+    .tx-hm{
+        left: 130px;
+        width: 200px;
+        top: 320px;
+    }
+
+    #p{
+        font-size: 9px;
+        top: 35px;
+    }
+    #p2{
+        font-size: 33px;
+    }
+    #p3{
+        top: -40px;
+    }
+    #p4{
+        font-size: 14px
+    }
+
+    .img-hm{
+        left: 120px;
+        top: -140px;
+    }
+    .foto{
+        width: 170px;
+    }
+
+    .abimg{
+        left: 150px;
+        top: 890px;
+    }
+
+    #imgab{
+        width: 110px;
+        height: 185px;
+    }
+
+    .tx-ab{
+        left:50px;
+        font-size: 10px;
+        top: 340px;
+        width: 390px;
+        height: 300px;
+    }
+
+    .js{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -5px;
+    }
+
+    .html{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -5px
+    }
+
+    .css{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: -5px
+    }
+
+    #html{
+        font-size: 7px;
+        left: 1px;
+        top: -54px;
+    }
+
+    #css{
+        font-size: 7px;
+        left: 25px;
+        top: -37px;
+
+    }
+
+    #js{
+        font-size: 7px;
+        left: 46px;
+        top: -12px;
+
+    }
+
+    .pcn{
+        display: block;
+        grid-template-columns: repeat(1);
+    }
+
+    .texto{
+        left: 80px;
+        top: 300px;
+    }
+
+    .form{
+        display: none;
+    }
+
+    #contac{
+        height: 700px;
+    }
+
+
+}
